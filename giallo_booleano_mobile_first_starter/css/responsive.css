@@ -9,8 +9,12 @@
         padding: 1rem;
     }
 
-    .recipe-origin {
-        display: inline;
+    .recipe-title >h2 {
+        font-size: 2rem;
+        
+        .recipe-origin {
+            display: inline;
+        }
     }
 
     .quick-notes >ul {
@@ -33,5 +37,61 @@
     .clearfix >img {
         float: left;
         margin: 0 2rem;
+    }
+
+    footer ul {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .recipe-card {
+        display: flex;
+
+            .recipe-video {
+                flex-grow: 2;
+                height: 430px;
+            }
+
+            .quick-notes >ul {
+            display: block;
+            
+        }
+    }
+
+    .social-networks {
+        display: flex;
+        
+        
+        .btn {
+            padding: 0.8rem 3rem;
+        }
+        
+        .label {
+            display: inline;
+        }
+    }
+
+    .recipe-title >h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            flex-wrap: nowrap; 
+        }
+
+        nav {
+            width: 50%;
+        }
+
+        address {
+            text-align: start;
+        }
     }
 }
